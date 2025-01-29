@@ -415,7 +415,7 @@ function Element:New(Idx, Config)
 						Dropdown:Display()
 
 						if typeof(Dropdown.Callback) == "function" then
-							--Library:SafeCallback(Dropdown.Callback, Dropdown.Value)
+							Library:SafeCallback(Dropdown.Callback, Dropdown.Value)
 						end
 						if typeof(Dropdown.Changed) == "function" then
 							Library:SafeCallback(Dropdown.Changed, Dropdown.Value)
@@ -463,7 +463,7 @@ function Element:New(Idx, Config)
 
 	function Dropdown:OnChanged(Func)
 		Dropdown.Changed = Func
-		Library:SafeCallback(Func, Dropdown.Value, Dropdown.Value)
+		--Library:SafeCallback(Func, Dropdown.Value, Dropdown.Value)
 	end
 
 	function Dropdown:SetValue(Val)
