@@ -491,7 +491,7 @@ function Element:New(Idx, Config)
 			Library:SafeCallback(Dropdown.Callback, Dropdown.Value)
 		end
 		if typeof(Dropdown.Changed) == "function" then
-			Library:SafeCallback(Dropdown.Changed, Dropdown.Value)
+			--Library:SafeCallback(Dropdown.Changed, Dropdown.Value)
 		end
 	end
 
