@@ -323,7 +323,7 @@ function Element:New(Idx, Config)
 		end
 	})
 
-	Toggle:SetValue(Toggle.Value)
+	--Toggle:SetValue(Toggle.Value)
 
 	Library.Options[Idx] = Toggle
 
